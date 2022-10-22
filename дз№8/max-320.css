@@ -1,0 +1,143 @@
+/*Mobile*/
+
+body {
+    margin: 7px 7px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 98%;
+    padding: 0;
+}
+
+.main div {
+    display: flex;
+    flex-direction: row wrap;
+}
+
+article {
+    gap: 21px;
+}
+
+.cross {
+    display: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.side-menu {
+    display: flex;
+    padding: 58px 20px;
+    position: absolute;
+}
+
+.logo {
+    padding-left: 38%;
+    margin-top: 47px;
+}
+
+.first {
+    flex-flow: row wrap;
+}
+
+.first .img {
+    width: 100%;
+    height: 300px;
+    background-position: -145px -51px;
+}
+
+.first .black-1 {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 278px;
+    margin-top: -20px;
+}
+
+.first .black-1 .dates {
+    padding: 0px 0px;
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: smaller;
+}
+
+.first .black-1 .dates .lifestyle {
+    display: none;
+}
+
+.first .black-1 .text {
+    display: flex;
+    flex-flow: column;
+    padding: 10px 21px;
+    gap: 0;
+}
+
+.second {
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.section {
+    font-size: larger;
+    padding-bottom: 8px;
+    margin-top: 60px;
+}
+
+.second .lifestyle2 {
+    display: none;
+}
+
+.second figcaption {
+    font-size: large;
+}
+
+.second .text-under {
+    padding: 30px 0px;
+}
+
+.forth {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
+.third,
+.fifth,
+.sixth {
+    flex-flow: row wrap;
+}
+
+.captioning {
+    padding: 20px 0px;
+}
+
+.forth .img {
+    background-position: -129px 1px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.forth .black-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forth .black-2 .dates {
+    padding-top: 120px;
+}
+
+.see-all-btn {
+    width: 100%;
+}
+
+footer {
+    margin-top: 70px;
+}

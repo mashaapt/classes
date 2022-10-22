@@ -1,0 +1,68 @@
+.main-anchor {
+    color: skyblue;
+}
+
+.team-anchor:hover,
+.lessons-anchor:hover {
+    color: skyblue;
+}
+
+ul.icons {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    width: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 120px;
+    margin-right: 42px;
+    margin-bottom: 40px;
+    list-style: none;
+    gap: 10px;
+}
+
+ul.icons li {
+    /* display: flex; */
+    /* align-items: center; */
+    gap: 7px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 11px;
+    width: 30px;
+}
+
+ul.icons li.active,
+ul.icons li:hover {
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+ul.icons li:hover {
+    transition: width 0.3s;
+    transition-timing-function: ease-in-out;
+    padding-right: 10px;
+    width: 80px;
+    color: white;
+}
+
+ul.icons li:hover .side {
+    opacity: 1;
+    transition: opacity 0.1s;
+    transition-delay: 110ms;
+    color: white;
+}
+
+.img-icon {
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.side {
+    opacity: 0;
+    position: absolute;
+    padding-top: 7px;
+}

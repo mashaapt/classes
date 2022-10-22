@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+    height: 900px;
+    width: 250px;
+    float: right;
+}
+
+.one {
+    background: linear-gradient(40deg, rgba(45,0,0,1) 15%, rgba(172,5,5,1) 86%);
+}
+
+.two {
+    background: linear-gradient(40deg, rgba(149,61,97,1) 15%, rgba(124,115,208,1) 86%);
+}
+
+.three {
+    background: linear-gradient(40deg, rgba(236,154,1,1) 15%, rgba(25,189,193,1) 86%);
+}
+
+.four {
+    background: linear-gradient(40deg, rgba(3,97,80,1) 47%, rgba(69,54,22,1) 75%);
+}
+
+.five {
+    background: linear-gradient(40deg, rgba(235,229,207,1) 36%, rgba(228,85,100,1) 82%);
+}
+
+.six {
+    background: linear-gradient(40deg, rgba(78,0,0,1) 35%, rgba(193,49,68,1) 82%);
+}
+
+.seven {
+    background: linear-gradient(40deg, rgba(138,138,138,1) 35%, rgba(149,87,43,1) 82%);
+}

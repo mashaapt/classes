@@ -1,0 +1,263 @@
+@font-face {
+    font-family: Kanit;
+    src: url(./Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: Kanit-Bold;
+    src: url(./Kanit/Kanit-Bold.ttf);
+}
+
+:not(ul) {
+    margin: 0;
+    padding: 0;
+    font-family: Kanit, sans-serif;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: #FFFFFF;
+}
+
+.logo {
+    position: absolute;
+    width: 157px;
+    height: 30px;
+    padding-left: 45%;
+    margin-top: 40px;
+}
+
+.cross {
+    position: absolute;
+    width: 30.41px;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+.cross .left {
+    position: absolute;
+    transform: rotate(.33deg);
+    /* transform: matrix(0.69, -0.72, -0.72, -0.69, 0, 0); */
+}
+
+.cross .right {
+    transform: rotate(4.33deg);
+}
+
+.navigation {
+    position: absolute;
+    width: 230px;
+    height: 235px;
+    left: 51px;
+    top: 106px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul li {
+    width: 43px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    list-style: none;
+    color: #000000;
+    font-size: smaller;
+}
+
+.first {
+    display: flex;
+}
+
+.first img {
+    width: 50%;
+    height: 570px;
+}
+
+.first .black-1 {
+    background-color: #000000;
+    height: 570px;
+    width: 50%;
+    color: white;
+}
+
+.first .black-1 .dates {
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-around;
+    font-size: smaller;
+}
+
+.black-1 .dates .lifestyle,
+.second .lifestyle2,
+.third .lifestyle3,
+.fifth .lifestyle3,
+.sixth .lifestyle3 {
+    text-decoration-line: underline;
+    font-family: Kanit, sans-serif;
+}
+
+.black-1 .text {
+    display: flex;
+    flex-flow: wrap;
+    padding: 100px 110px;
+    gap: 50px;
+}
+
+.black-1 button {
+    margin-left: 110px;
+    padding: 13px 30px;
+    font-size: x-small;
+    color: white;
+    background-color: #000000;
+    border: 1px white solid;
+}
+
+.second {
+    padding: 100px 150px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+}
+
+.second .lifestyle2 {
+    position: absolute;
+    margin: -14px 502px;
+}
+
+.second figcaption,
+.third figcaption,
+.fifth figcaption,
+.sixth figcaption {
+    font-size: x-small;
+}
+
+.text-under {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 150px;
+    gap: 50px;
+}
+
+.text-under .text-un1,
+.text-under .text-un2 {
+    width: 49%;
+}
+
+.text-un1 p,
+.text-un2 p {
+    margin-bottom: 10px;
+    /* font-family: Kanit-Bold, sans-serif;
+    font-size: larger; */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.section {
+    position: absolute;
+    padding: 65px 150px;
+}
+
+.third,
+.fifth,
+.sixth {
+    display: flex;
+    padding: 0px 150px;
+    justify-content: space-between;
+}
+
+.third .lifestyle3,
+.fifth .lifestyle3 {
+    position: absolute;
+    margin: -14px 311px;
+}
+
+.captioning {
+    display: flex;
+    padding: 30px 148px;
+    padding-bottom: 60px;
+    gap: 227px;
+    font-size: 18px;
+}
+
+.see-all-btn {
+    color: white;
+    background-color: #303030;
+    height: 42px;
+    width: 238px;
+    margin: 0 auto;
+}
+
+.forth {
+    display: flex;
+    padding: 60px 150px;
+}
+
+.forth img {
+    width: 50%;
+    height: 360px;
+}
+
+.forth .black-2 {
+    background-color: #000000;
+    height: 360px;
+    width: 50%;
+    color: white;
+}
+
+.forth .black-2 .dates {
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-around;
+    font-size: smaller;
+    margin-bottom: 30px;
+}
+
+.btn-sub {
+    margin: 0 auto;
+    height: 42px;
+    width: 198px;
+    color: white;
+    background: black;
+    border: white 1px solid;
+}
+
+.fifth,
+.sixth {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    flex-flow: column wrap;
+    height: 163px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-img {
+width: 157px;
+height: 30px;
+}
+
+footer img {
+    margin-top: 50px;
+}
+footer .des {
+    margin-top: 95px;
+    font-size: x-small;
+}

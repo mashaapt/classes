@@ -1,0 +1,421 @@
+@media (max-width: 768px) {
+  .part2 .pics .pic img {
+    width: auto;
+  }
+  .part3 .people {
+    flex-flow: row wrap;
+    gap: 30px;
+  }
+  footer .container-md {
+    min-width: 768px;
+  }
+}
+@media (max-width: 300px) {
+  .title {
+    text-align: center;
+  }
+  .head {
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .head .navigation .right {
+    gap: none;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  .head header {
+    margin-top: 20px;
+  }
+  .head header .head-text {
+    font-size: 30px;
+  }
+  .head header .undertext {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+  .part2 .pics {
+    padding: 0px;
+    gap: 12px;
+    flex-flow: row wrap;
+  }
+  .part2 .pics .pic {
+    height: 233px;
+    width: 100%;
+  }
+  .part2 .pics .pic img {
+    width: auto;
+  }
+  .part3 .people {
+    flex-flow: row wrap;
+    gap: 30px;
+  }
+  .part4 .pictures .picture {
+    text-align: center;
+  }
+  .part4 .pictures .pic-sm {
+    height: 120px;
+    width: 100%;
+  }
+  .part5 .answer .enter, .part5 .answer .find {
+    width: 280px;
+  }
+  .part5 .answer .enter {
+    padding: 5px 0px 5px 7px;
+    margin-bottom: 5px;
+  }
+  .foot {
+    flex-flow: column wrap;
+  }
+  .foot .rows {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+  .foot .rows .list {
+    display: flex;
+    width: 100%;
+  }
+  .foot .rows .list ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .foot .logo {
+    margin-left: 0;
+    align-items: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+.btns, .part5 .answer .find, .part2 .pics button, header .find {
+  background-color: rgb(255, 78, 80);
+  border-radius: 14px;
+  border: none;
+  color: white;
+}
+
+.icon, .people .bradley i,
+.people .marie i,
+.people .diana i,
+.people .christopher i {
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+@media (min-width: 960px) {
+  .container-md {
+    max-width: 960px !important;
+  }
+}
+.head {
+  background-image: url(../images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+.navigation .left {
+  font-size: 20px;
+  font-family: MontserratBold;
+}
+.navigation .right {
+  display: flex;
+  gap: 50px;
+}
+.navigation .right .sign-up {
+  border: 1px white solid;
+  padding: 5px 14px;
+  border-radius: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 150px;
+  flex-flow: column wrap;
+}
+header .head-text {
+  font-size: 50px;
+  font-family: MontserratBold;
+}
+header .undertext {
+  font-size: 24px;
+  padding: 30px 0;
+}
+header .find {
+  font-size: 14px;
+  padding: 12px 20px;
+  font-family: MontserratBold;
+  border-radius: 50px;
+}
+
+.title {
+  color: #000;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  font-family: MontserratBold;
+  margin-top: 30px;
+}
+
+.part2 {
+  width: 100%;
+}
+.part2 .pics {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  gap: 30px;
+}
+.part2 .pics .pic {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.part2 .pics .pic .contains {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  gap: 20px;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.part2 .pics .pic .contains .big-text {
+  color: white;
+  font-family: MontserratBold;
+  font-size: 14px;
+}
+.part2 .pics .pic .contains .small-text {
+  color: white;
+  font-size: 10px;
+}
+.part2 .pics .pic img {
+  width: 100%;
+  position: relative;
+}
+.part2 .pics button {
+  padding: 4px 18px;
+  width: 69px;
+  font-size: 10px;
+}
+
+.part3 .btn-part3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.part3 .btn-part3 button {
+  background-color: white;
+  color: rgb(255, 78, 80);
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 78, 80);
+  font-family: MontserratBold;
+}
+
+.people {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 35px;
+}
+.people .bradley,
+.people .marie,
+.people .diana,
+.people .christopher {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 225px;
+}
+.people .bradley .info,
+.people .marie .info,
+.people .diana .info,
+.people .christopher .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.people .bradley .name,
+.people .marie .name,
+.people .diana .name,
+.people .christopher .name {
+  font-size: 14px;
+  font-family: MontserratBold;
+  padding: 15px 0;
+}
+.people .bradley .description,
+.people .marie .description,
+.people .diana .description,
+.people .christopher .description {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}
+.people .bradley .photo,
+.people .marie .photo,
+.people .diana .photo,
+.people .christopher .photo {
+  position: relative;
+}
+.people .bradley img,
+.people .marie img,
+.people .diana img,
+.people .christopher img {
+  height: 90px;
+  width: 90px;
+}
+.people .bradley i,
+.people .marie i,
+.people .diana i,
+.people .christopher i {
+  position: absolute;
+  margin-top: 63px;
+  right: 0;
+}
+.people .bradley i {
+  background-color: rgb(255, 78, 80);
+}
+.people .marie i {
+  background-color: #19d4ca;
+}
+.people .diana i {
+  background-color: #ffa710;
+}
+.people .christopher i {
+  background-color: #667df3;
+}
+
+.part4 {
+  margin-top: 20px;
+}
+.part4 .pictures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+.part4 .pictures .picture {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 3px;
+}
+.part4 .pictures .picture img {
+  width: 100%;
+}
+.part4 .pictures .picture .text {
+  display: flex;
+  position: absolute;
+  font-family: MontserratBold;
+  color: white;
+  font-size: 22px;
+  align-self: center;
+}
+
+.part5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.part5 .question {
+  margin-top: 35px;
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+}
+.part5 .answer input {
+  padding: 5px 130px 5px 7px;
+}
+.part5 .answer .find {
+  padding: 8px 38px;
+}
+
+.hr {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 78, 80);
+  margin-top: 70px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 80px;
+}
+footer .rows {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 210px;
+}
+footer .rows .row1 {
+  color: rgb(255, 78, 80);
+  font-size: 16px;
+}
+footer .rows .list {
+  display: flex;
+  flex-direction: column;
+}
+footer .rows .list ul {
+  list-style: none;
+}
+footer .rows .list ul li {
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+footer .rows p {
+  font-size: 14px;
+  font-family: MontserratBold;
+  margin-bottom: 10px;
+}
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+footer .logo .text {
+  display: flex;
+  justify-content: end;
+  font-size: 10px;
+  color: rgb(204, 204, 204);
+}
+
+/*# sourceMappingURL=style.css.map */

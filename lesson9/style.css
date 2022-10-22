@@ -1,0 +1,203 @@
+@keyframes circleTransform {
+    0%{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        /* rotate: 120deg; */
+        transform: rotate(120deg);
+        top: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 10%;
+        /* rotate: 240deg; */
+        transform: rotate(240deg);
+        top: -110px;
+        left: 200px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        /* rotate: 360deg; */
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideText {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 700px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes carMove {
+    0% {
+        background-size: 700px 300px;
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-size: 700px 295px;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-size: 700px 300px;
+        background-repeat: no-repeat;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 300vh;
+    background-color: cadetblue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+
+    /* animation-name: circleTransform;
+    name of animation
+
+    animation-duration: 3s;
+    duration of animation in secs or milsecs
+
+    animation-timing-function: linear;
+    cadrs
+
+    animation-iteration-count: infinite;
+    how many iterations
+
+    animation-direction: normal;
+    in which side
+
+    animation-delay: 0.5s;
+    delay of animation
+
+    animation-play-state: running;
+    when it starts running
+
+    animation-fill-mode: forwards;
+    with inginite mode it doesnt work. its paused on some point(iterationcount = 1) */
+
+    animation: circleTransform 3s linear 0.5s infinite normal forwards;
+    /* animation: name duration time-func delay iteration-count direction fill-mode; all in one*/
+}
+
+.container:hover .circle {
+    animation-play-state: paused;
+
+    /* animation-name: none; */
+    /*reset*/
+}
+
+.text {
+    width: 1000px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+
+.moving-text {
+    animation: slideText 8s linear 0s infinite normal forwards;
+    position: relative;
+    left: 0;
+}
+
+.car {
+    width: 700px;
+    height: 400px;
+    background-image: url(./img/car.jpg);
+    background-size: 700px 300px;
+    background-repeat: no-repeat;
+
+    mix-blend-mode: multiply;
+    /*background of img goes away*/
+
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    animation-name: carMove;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.wheel {
+    width: 116px;
+    height: 157px;
+    background-image: url(./img/wheel.png);
+    background-repeat: no-repeat;
+    background-size: 116px 126px;
+    border-radius:41%;
+    margin-left: 105px;
+    margin-bottom: 10px;
+}
+
+.wheel {
+    width: 116px;
+    height: 257px;
+    background-image: url(./img/wheel.png);
+    background-repeat: no-repeat;
+    background-size: 126px 126px;
+    border-radius: 41%;
+    margin-right: 75px;
+    margin-bottom: 10px;
+
+    position: relative;
+    left: 0;
+    animation-name: wheels;
+
+}
+
+.road {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}

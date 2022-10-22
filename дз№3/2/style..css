@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.main {
+    height: 650px;
+    width: 700px;
+    border: 2px black solid;
+    margin: 100px;
+}
+.head {
+    background-color: bisque;
+    height: 130px;
+    width: 700px;
+    overflow: hidden;
+}
+
+
+.sm-head {
+    background-color: brown;
+    height: 60px;
+    width: 543px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.smr-head {
+    background-color: wheat;
+    height: 25px;
+    width: 210px;
+    margin: 0 auto;
+    margin-top: 17px;
+    text-align: center;
+    margin-left: 163px;
+}
+
+.menu {
+    height: 90px;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4,
+.menu5 {
+    height: 90px;
+    width: 140px;
+    float: left;
+    text-align: center;
+    line-height: 90px;
+}
+
+.menu1 {
+    background-color: aquamarine;
+}
+
+.menu2 {
+    background-color: lightskyblue;
+}
+
+.menu3 {
+    background-color: yellowgreen;
+}
+
+.menu4 {
+    background-color: coral;
+}
+
+.menu5 {
+    background-color: purple;
+}
+
+.middle1 {
+    background-color: green;
+    height: 350px;
+    width: 233.3px;
+    float: left;
+}
+
+.text {
+    height: 60px;
+    width: 115px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 12px;
+    float: none;
+    text-align: center;
+    line-height: 60px;
+}
+
+.nums {
+    margin: 0 auto;
+    width: 90px;
+    margin-top: 88px;
+    float: none;
+}
+
+.block3 {
+    height: 60px;
+    width: 90px;
+    background-color: crimson;
+    text-align: center;
+}
+
+.block4 {
+    height:130px;
+    width: 45px;
+    background-color: peachpuff;
+    float: left;
+    text-align: center;
+
+}
+
+.block5 {
+    height: 130px;
+    width: 45px;
+    background-color: peru;
+    float: left;
+    text-align: center;
+}
+
+.middle2 {
+    height: 350px;
+    width: 233.3px;
+    float: left;
+}
+
+.sectionA {
+    height: 25px;
+    width: 233.3px;
+    background-color: darkslategray;
+    text-align: center;
+}
+
+.b-section {
+    height: 235px;
+    width: 77.7px;
+    background-color: turquoise;
+    text-align: center;
+}
+
+.b1 {
+    height: 260px;
+    width: 50%;
+    background-color: red;
+    text-align: center;
+    margin-top: 65px;
+    margin-left: -11px;
+}
+
+.b2 {
+    height: 130px;
+    width: 50%;
+    background-color: lime;
+    float: right;
+    text-align: center;
+    margin-top: 195px;
+}
+
+.section {
+    width: 77.7px;
+    height: calc(100% - 25px);
+}
+
+.c-section1 * {
+    height: 25%;
+    width: 100%;
+}
+
+
+.c1 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+.c2 {
+    background-color: blue;
+    text-align: center;
+}
+
+.c3 {
+    background-color: violet;
+    text-align: center;
+}
+
+.c4 {
+    width: 50%;
+    background-color: wheat;
+    text-align: center;
+    float: right;
+}
+
+.c5 {
+    width: 50%;
+    background-color: pink;
+    text-align: center;
+}
+
+.d-section * {
+    width: 100%;
+}
+
+.d {
+    height: 25%;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.d1 {
+    height: 25%;
+    background-color: blueviolet;
+    text-align: center;
+}
+.d3 {
+    height: 50%;
+    background-color: beige;
+    text-align: center;
+}
+
+.middle3 {
+    height: 350px;
+    width: 233.3px;
+    float: left;
+}
+
+.num1,
+.num2,
+.num3 {
+    height: 25px;
+    width: 77.7px;
+    text-align: center;
+}
+.num1 {
+    background-color: seagreen;
+}
+
+.num2 {
+    background-color: blanchedalmond;
+}
+
+.num3 {
+    background-color: burlywood;
+}
+
+.light {
+    height: 73px;
+    width: 233.3px;
+    background-color: cornflowerblue;
+}
+
+.red {
+    height: 28px;
+    width: 80px;
+    background-color: red;
+    float: none;
+    margin: 24px auto;
+}
+
+.black {
+    height: 4px;
+    width: 12px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-left: 34px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.num6 {
+    height: 53px;
+    width: 233.3px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.num7 {
+    height: 199px;
+    width: 77.7px;
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+
+.num8 {
+    height: 66px;
+    width: 155px;
+    background-color: darkcyan;
+    text-align: center;
+}
+
+.num9 {
+    height: 66px;
+    width: 77.7px;
+    background-color: hotpink;
+    text-align: center;
+}
+
+.num10 {
+    height: 66px;
+    width: 77.7px;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+.num11 {
+    height: 67px;
+    width: 155px;
+    background-color: darkseagreen;
+    text-align: center;
+}
+
+.bottom {
+    height: 80px;
+    width: 700px;
+    background-color: darkgray;
+    text-align: center;
+}

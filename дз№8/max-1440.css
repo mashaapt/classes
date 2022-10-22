@@ -1,0 +1,13 @@
+/* Large devices */
+
+article {
+    gap: 40px;
+}
+
+.black-1 .text {
+    padding: 50px 137px;
+}
+    
+.black-1 button {
+    margin-left: 143px;
+}

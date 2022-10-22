@@ -1,0 +1,119 @@
+@media (max-width: 300px) {
+
+    .title {
+        text-align: center;
+    }
+
+    .head {
+        text-align: center;
+        padding: 20px 0px;
+        
+        .navigation {
+            .right {
+                gap: none;
+                justify-content: space-evenly;
+                text-align: center;
+                margin-bottom: 200px;
+            }
+        }
+
+        header {
+            margin-top: 20px;
+
+            .head-text {
+                font-size: 30px;
+            }
+
+            .undertext {
+                font-size: 20px;
+                padding: 10px 0px;
+            }
+        }
+
+    }
+
+    .part2 {
+        .pics {
+            padding: 0px;
+            gap: 12px;
+            flex-flow: row wrap;
+
+            .pic {
+                height: 233px;
+                width: 100%;
+
+                img {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .part3 .people {
+            flex-flow: row wrap;
+            gap: 30px;
+    }
+
+    .part4 {
+        .pictures {
+            .picture {
+                text-align: center;
+            }
+
+            .pic-sm {
+                height: 120px;
+                width: 100%;
+                // overflow: hidden;
+                // position: absolute;
+                // left: 0;
+                // right: 0;
+                // top: -83%;
+                // bottom: 0;
+            }
+        }
+    }
+
+    .part5 {
+        .answer {
+            .enter, .find {
+                width: 280px;
+            }
+
+            .enter {
+                padding: 5px 0px 5px 7px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+    .foot {
+        flex-flow: column wrap;
+
+        .rows {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 0;
+
+            .list {
+                display: flex;
+                width: 100%;
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                    padding: 0;
+                }
+            }
+        }
+
+        .logo {
+            margin-left: 0;
+            align-items: center;
+        }
+    }
+
+}

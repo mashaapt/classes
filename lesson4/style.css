@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./font/Raleway/Raleway-Italic-VariableFont_wght.ttf')
+}
+
+.font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: aquamarine;
+    /* letter-spacing: 3px; */
+    /* word-spacing: 4px; */
+    /* text-indent: 5px;  abzats */
+}
+
+.head {
+    height: 150px;
+    width: 100%;
+    /* background: rgb(34,193,195); */
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.7174355158730159) 100%);
+    /* opacity: 3; */
+}
+
+.head:hover {
+    /* animation-durations: 5s; */
+    height: 50px;
+    background: linear-gradient(20deg, rgba(6,163,165,1) 43%, rgba(231,45,253,0.7174355158730159) 100%);;
+}
+
+.text {
+    text-align: justify;
+}
+
+.iconFont {
+    font-size: 0.6rem;
+}
+
+body {
+    background-image: url(https://t1.daumcdn.net/cfile/tistory/999074475D8B71292C);
+    /* background-size: contain; make pic smaller and repeatit */
+    /* background-repeat: no-repeat; just one */
+    background-size: 100% auto;
+    /* background-attachment: scroll; */
+}
+
+.div2 {
+    font-size: 3rem;
+}
+
+.footer {
+    background-color: skyblue;
+}

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 3000px;
+    width: 100%;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.some {
+    margin: 0 auto;
+    height: 100px;
+    width: 800px;
+    background-color: skyblue;
+}
+
+/* .some .someDiv {
+    margin: 0 auto;
+    height: 100px;
+    width: 800px;
+    background-color: purple;
+} */
+
+div>p {
+    color: blueviolet;
+}
+
+p[title=""] {
+    color: gray;
+}
+
+textarea {
+    resize: none;
+}
+
+.mainDiv {
+    height: 300px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: olive;
+}
+
+.mainDiv::before {
+    display: block;
+    content: '';
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+
+.mainDiv::after {
+    display: block;
+    content: '';
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+}
+
+.mainDiv::first-letter {
+    font-size: 3rem;
+}
+/* bir first letter */
+.mainDiv::first-line {
+    text-decoration: underline;
+}
+
+.mainDiv::selection {
+    color: red;
+    background-color: pink;
+}
+
+/* input::placeholder {
+    color: red;
+} */
+
+a {
+    color: purple;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: orange;
+}
+
+.textInput:focus {
+    background-color: coral;
+}
+
+/* a[myAttr] :focus {
+    border: red 4px dotted;
+}
+???????? */
+
+li:first-child {
+    background-color: teal;
+}
+
+li:last-child {
+    background-color: blue;
+}
+
+li:nth-child(3) {
+    border-bottom: red solid 1px;
+}
+/* odd and even */
+
+/* li:nth-child(2n) {
+    background-color: firebrick;
+} */

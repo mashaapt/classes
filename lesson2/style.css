@@ -1,0 +1,66 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    font-weight: 700;
+    color: blueviolet;
+}
+
+.fq {
+    width: 600px;
+    height: 100px;
+    color: aqua;
+    border: solid 2px blue;
+}
+
+.sq {
+    width: 500px;
+    height: 400px;
+    color: crimson;
+    border: solid 2px blue;
+
+}
+
+.tq {
+    width: 600px;
+    height: 100px;
+    color: green;
+    border: solid 2px blue;
+
+}
+
+
+
+
+/* 
+h1 {
+    color: green;
+}
+
+p {
+    border: solid coral 2px;
+}
+
+#divOne {
+    font-weight: bolder;
+    color: chartreuse;
+    margin-bottom: 30px;
+}
+
+.divTwo {
+    color: aqua;
+}
+
+.twoDivs {
+    background-color: black;
+}
+
+.threeDivs {
+    background-color: lightblue;
+    color: chocolate;
+}
+
+.div11 {
+    color: red;
+} */

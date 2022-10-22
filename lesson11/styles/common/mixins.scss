@@ -1,0 +1,7 @@
+
+@mixin shape($w, $h, $bg, $b-w, $b-s, $b-c) {
+    width: $w;
+    height: $h;
+    background: $bg;
+    border: $b-w $b-s $b-c;
+}

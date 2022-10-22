@@ -1,0 +1,153 @@
+body {
+    font-family: Bahij SultanNahia, sans-serif;
+}
+
+.thumbnail {
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    padding: 7px;
+}
+
+.thumbnail-bl {
+    background-color: skyblue;
+}
+
+.thumbnail-or {
+    background-color: chocolate;
+}
+
+.thumbnail-cor {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: coral;
+    font-size: 30px;
+    text-align: center;
+    line-height: 68px;
+    color: white;
+}
+
+.passwords {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.password {
+    width: 350px;
+}
+.com-name {
+    width: 467px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-col {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+}
+
+.company,
+.password-block {
+    flex-direction: column;
+}
+
+.name-block,
+.password-block,
+.block2 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.block1 {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block2 {
+    width: 50%;
+    margin-right: 20px;
+}
+
+
+h5 {
+    font-size: 18px;
+    color: gray;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+}
+
+button {
+    border-radius: 12px;
+    background-color: skyblue;
+    border: none;
+    width: 90px;
+    padding: 11px;
+}
+.btn1 {
+    margin-left: 311px;
+    margin-top: 15px;
+}
+
+.btn2 {
+    margin-top: 63px;
+    margin-left: 408px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 50px;
+    color: gray;
+}
+
+.passwords {
+    margin-top: 10px;
+}
+
+.company label,
+.company input {
+    margin-top: 9px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

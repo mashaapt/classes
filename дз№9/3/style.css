@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    background-image: url(./space.png);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth-and-moon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.earth {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+.path {
+    box-shadow: 1px 1px 8px -2px #000;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    position: relative;
+    height: 129px;
+    width: 750px;
+    position: absolute;
+    border-top: transparent;
+}
+
+.moon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-top: 35px;
+    margin-left: 20px;
+    animation: orbit 8s linear 0s infinite normal forwards;
+    animation-play-state: running;
+}
+
+@keyframes orbit {
+
+    0% {
+        position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-top: 35px;
+    margin-left: 20px;
+    }
+
+    50% {
+        bottom: 100px;
+        right: 100px;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        z-index: 0;
+    }
+
+    100% {
+        z-index: 1;
+        top: 100px;
+        left: 100px;
+        transform: rotate(180deg);
+    }
+    /* 0% {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    25% {
+        left: 200px;
+        top: 15px;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    75%{
+        bottom: 100px;
+        z-index: 0;
+        transform: rotate(-180deg); 
+    }
+    100%{
+        right: 150px;
+        z-index: 2;
+        transform: rotate(180deg);
+    } */
+
+    /* from {
+        left: 50px;
+        transform: rotate(0turn)
+                   translateX(10em)
+                   rotate(0turn);
+      }
+      to {
+        transform: rotate(1turn)
+                   translateX(10em)
+                   rotate(-1turn);
+      } */
+
+      /* from {
+        transform: rotate(360deg) translate(-50%, -50%);
+        transition: ease-in-out;
+
+      }
+
+      to {
+        transform: translate(-50%, -50%);
+        transform: rotate(360deg) translate(-50%, -50%);
+
+      } */
+}

@@ -1,0 +1,99 @@
+@import './mixins.scss';
+@import './palette.scss';
+
+
+.shape {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+body {
+    background-color: skyblue;
+    padding: 300px;
+}
+
+.error-message {
+    color: $error-color;
+}
+
+.square {
+    // width: 300px;
+    // height: 300px;
+    // background: black;
+    // border: 3px solid yellowgreen;
+
+    // @include shape(300px, 300px, black, 3px, solid, green)
+
+    @extend .shape;
+    border: 3px solid yellowgreen
+}
+
+.rectangle {
+    // width: 500px;
+    // height: 300px;
+    // background: red;
+    // border: 3px dotted blue;
+    @include shape(500px, 300px, red, 3px, dotted, blue)
+}
+
+.circle {
+    // width: 300px;
+    // height: 300px;
+    // background: lightblue;
+    // border: 3px dashed yellow;
+    @include shape(300px, 300px, lightblue, 3px, dashed, yellow);
+    border-radius: 50%;
+}
+
+.container img {
+    height: 400px;
+}
+
+.cards {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cards-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards-list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 300px;
+        flex-direction: column;
+        box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &_img {
+        width: 400px;
+    }
+
+    &_description {
+        margin: 10px;
+    }
+
+    &_btn {
+        padding: 1px 15px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 5px;
+        background: gray;
+        color: white;
+        cursor: pointer;
+    }
+
+    &--active {
+        background-color: cadetblue;
+    }
+}

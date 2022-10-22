@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.blue {
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    border: 1px dashed red;
+    margin: 13px auto;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    border: 1px dotted red;
+    margin: 13px auto;
+
+}
+
+.navy {
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    border: 15px navy solid;
+    margin: 13px auto;
+
+}
+
+.blue2 {
+    background-color: aqua;
+    height: 100px;
+    width: 193px;
+    margin: 13px auto;
+
+
+}
+
+.blue3 {
+    height: 100px;
+    width: 7px;
+    background-color: black;
+    
+}

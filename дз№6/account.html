@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nav-info.css">
+    <link rel="stylesheet" href="./side-bar.css">
+    <link rel="stylesheet" href="./account.css">
+    <title>Account</title>
+</head>
+
+<body>
+    <nav>
+        <a class="main-anchor" href="main.html">Main</a>
+        <a class="team-anchor" href="team.html">Team</a>
+        <a class="lessons-anchor" href="lessons.html">Lessons</a>
+    </nav>
+    <div class="main-info">
+
+        <div class="flex-row">
+            <div class="side-nav">
+                <ul class="icons">
+                    <a class="main-anchor" href="main.html">
+                        <li>
+                            <img class="img-icon" src="./icons/folder.svg" alt="1">
+                            <span class="side">Project</span>
+                        </li>
+                    </a>
+                    <li class="active">
+                        <a class="account-anchor" href="account.html">
+                            <img class="img-icon" src="./icons/monitor.svg" alt="2">
+                            <span class="side">Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img class="img-icon" src="./icons/users-alt.svg" alt="3">
+                        <span class="side">Groups</span>
+                    </li>
+                    <li>
+                        <img class="img-icon" src="./icons/cloud-share.svg" alt="4">
+                        <span class="side">Cloud</span>
+
+                    </li>
+                    <li>
+                        <img class="img-icon" src="./icons/cog.svg" alt="5">
+                        <span class="side">Settings</span>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="main-col">
+                <div class="block1">
+                    <div class="name-block">
+                        <header>
+                            <div class="thumbnail-cor">A</div>
+                            <div class="info">
+                                <h1>Andy Cube</h1>
+                                <h5>andycube@gmail.com</h5>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="password-block">
+                        <header>
+                            <img class="thumbnail thumbnail-bl" src="./icons/padlock.svg" alt="lock">
+                            <div class="info">
+                                <h1>Change Password</h1>
+                                <h5>Please choose a password which is longer than 6 characters</h5>
+                            </div>
+                        </header>
+                        <form class="passwords">
+                            <label>Old password</label>
+                            <input class="password" type="password" placeholder="Enter password" minlength="6">
+                            <label>New password</label>
+                            <input class="password" type="password" placeholder="Enter password" minlength="6">
+                            <label>Confirm password</label>
+                            <input class="password" type="password" placeholder="Enter password" minlength="6">
+                        </form>
+                        <button class="btn1" type="submit">Save</button>
+                    </div>
+                </div>
+
+                <div class="block2 company">
+                    <header>
+                        <img class="thumbnail thumbnail-or" src="./icons/university.svg" alt="university">
+                        <div class="info">
+                            <h1>Company</h1>
+                            <h5>Optional, but we would appreciate if you fill out thee form</h5>
+                        </div>
+                    </header>
+                    <form action="">
+                        <label>Company name</label>
+                        <input class="com-name" type="text" placeholder="Logos IT-academy">
+                        <label>Company address</label>
+                        <textarea cols="30" rows="10">61 I.Franka, Lviv</textarea>
+                        <div class="inputs-sm">
+                            <div class="form-control">
+                            <label>Country</label>
+                            <input class="adresses" type="text" placeholder="Enter country">
+                            </div>
+                            <div class="form-control">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter city">
+                            </div>
+                            <div class="form-control">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter state">
+                            </div>
+                            <div class="form-control">
+                            <label>Postal <code></code></label>
+                            <input type="text" placeholder="Enter code">
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn2" type="submit">Save</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

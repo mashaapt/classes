@@ -1,0 +1,98 @@
+body {
+    background-color: cadetblue;
+    height: 3000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.divOne {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+
+.divTwo {
+    margin-left: 20px;
+    margin-top: 20px;
+    /* width: inherit;
+    height: inherit; */
+    height: 300px;
+    width: 300px;
+    background-color: green;
+}
+
+.divThree {
+    background-color: fuchsia;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 49px;
+    padding: 1px;
+}
+
+.divFour {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 49px;
+    padding: 1px;
+}
+
+.divFour {
+    height: 50px;
+    width: 50px;
+    background-color: turquoise;
+    margin-top: 67px;
+}
+
+.divFive {
+    padding: 11px;
+}
+
+/* .divFour {
+    display: flex;
+    justify-content: center;
+} */
+
+
+.divNew1 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
+    padding: 1px;
+    background-color: black;
+    color: white;
+    border: solid 3px white;
+    /* overflow: scroll; */
+}
+
+.divNew2 {
+    height:300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 85px; */
+    background-color: brown;
+    padding-left: 30px;
+    float: right;
+    transition: 1.2s;
+    border-radius: 20%;
+}
+
+.divNew2:hover {
+    /* transform: rotate(32deg); */
+    /* transform: scale(2); */
+    transform: skew(15deg, 15deg);
+
+}
+
+h1 {
+    
+}

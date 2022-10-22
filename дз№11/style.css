@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.block-first-part, .container .icon {
+  width: 50px;
+  background-color: lightblue;
+}
+
+.block-second-part, .container .icon + .description {
+  width: 290px;
+  background-color: white;
+  color: #000;
+}
+
+.top,
+.bottom {
+  width: 100%;
+  background-color: coral;
+}
+
+.top {
+  height: 100px;
+}
+
+.bottom {
+  height: 200px;
+}
+
+.middle {
+  background-color: cadetblue;
+  height: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.icon i {
+  font-size: xx-large;
+  line-height: 5.5;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 100px;
+  overflow: hidden;
+  transition: width 1s;
+  height: 100%;
+  cursor: pointer;
+}
+.container:hover {
+  width: 400px;
+}
+.container:hover .twitter-icon {
+  background-color: skyblue;
+}
+.container:hover .facebook-icon {
+  background-color: #3b5998;
+}
+.container:hover .linkedin-icon {
+  background-color: #0e76a8;
+}
+.container:hover .insta-icon {
+  background-color: #4dd94f;
+}
+.container:hover .youtube-icon {
+  background-color: #c4302b;
+}
+.container:hover .tumblr-icon {
+  background-color: #34526f;
+}
+.container:hover .dribbble-icon {
+  background-color: #ea4c89;
+}
+.container .icon {
+  height: 180px;
+  width: 100px;
+  min-width: 100px;
+  border: 0.5 solid lightgray;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.container .icon + .description {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  min-width: 290px;
+  padding: 32px 5px;
+}
+.container .icon + .description .title {
+  font-size: 40px;
+}
+.container .icon + .description .text {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

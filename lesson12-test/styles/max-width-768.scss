@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .part2 {
+        .pics {
+            .pic {
+                img {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .part3 .people {
+            flex-flow: row wrap;
+            gap: 30px;
+    }
+
+    footer .container-md {
+        min-width: 768px;
+    }
+}

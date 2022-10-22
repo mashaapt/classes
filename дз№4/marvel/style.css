@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url(./fonts/Oswald/Oswald-Bold.ttf),
+}
+
+@font-face {
+    font-family: 'Lekton-Regular';
+    src: url('./fonts/Lekton/Lekton-Regular.ttf')
+}
+body {
+    font-family: 'Oswald', 'Lekton', sans-serif;
+}
+
+article {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 9px;
+    background-color: lightgray;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+.img1 {
+    margin-left: 65px;
+    margin-top: 60px;
+    width: 80%;
+    padding: 2px;
+    border: 1px gray solid;
+}
+
+.img1:hover {
+    border: red dotted 4px;
+}
+
+.imgs img {
+    margin-top: 60px;
+    height: 43px;
+    margin-left: 41px;
+    padding: 2px;
+    border: 1px gray solid;
+}
+
+.imgs:hover {
+    transform: scale(1.2);
+}
+ 
+.parts {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.part {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+.part:nth-child(2) {
+    padding: 60px 76px;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Oswald-Medium', sans-serif;
+    border-bottom: 2px red solid;
+    font-size: 27px;
+    padding-bottom: 6px;
+}
+
+p {
+    font-family: 'Lekton-Regular', sans-serif;
+    font-size: small;
+    padding-top: 10px;
+}

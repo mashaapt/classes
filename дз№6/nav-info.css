@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Bahij SultanNahia;
+    src: url(./fonts/bahij-sultannahia.ttf);
+}
+
+@font-face {
+    font-family: ChronicaPro-Regular;
+    src: url(./fonts/ChronicaPro-Regular.ttf);
+}
+
+nav {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 25px;
+    font-family: Bahij SultanNahia, sans-serif;
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.main-info {
+    background-color: gainsboro;
+    border-radius: 12px;
+    margin: 0 30px;
+    /* height: 500px; */
+    padding: 30px 0;
+}

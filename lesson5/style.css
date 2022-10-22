@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    height: 600px;
+    width: 900px;
+    margin: 0 auto;
+    /* gap: 10px; */
+    background-color: skyblue;
+    display: flex;
+
+    /* flex-direction: column-reverse; */
+    /* flex-direction: wrap; */
+
+    flex-flow: column wrap;
+    /* можно обьеденить */
+
+    justify-content: space-around;
+    /* horizontally alignment */
+
+    /* align-items: stretch; */
+    align-items: center;
+
+    align-self: space-around;
+    /* ровняется. сначало. конейнера */
+
+    align-content: flex-start;
+
+}
+
+.flex {
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: peru;
+    border: dashed white 2px;
+    gap: 4px;
+    min-height: 100px;
+    min-width: 200px;
+
+    /* order: 2; */
+    /* in what order its staying */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.class1 {
+    height: 100px;
+    width: 300px;
+    background-color: red;
+    position: static;
+}
+
+.class2 {
+    height: 100px;
+    width: 300px;
+    background-color: blue;
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+
+.class3 {
+    height: 100px;
+    width: 300px;
+    background-color: turquoise;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+
+    z-index: -1; 
+    /* скинет под другой елемент */
+}
+
+.class4 {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    position: fixed;
+    top: 50px;
+    left: 90px;
+    /* almost like absolute */
+    /* like sticky sticks too */
+}
+
+.class5 {
+    height: 100px;
+    width: 300px;
+    background-color: lightgray;
+    position: sticky;
+    top: 100px;
+    left: 300px;
+    /* for scrolling */
+}

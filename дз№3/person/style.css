@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    height: 90px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    border-top: 20px solid orange;
+    text-align: center;
+}
+
+.eyes {
+    margin-top: 12px;
+}
+
+.eye1, .eye2 {
+    background-color: crimson;
+    border-top: 3px solid black;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+}
+
+.nose {
+    height: 10px;
+    width: 10px;
+    margin: 0 auto;
+}
+
+.neck {
+    height: 31px;
+    width: 22px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.hand1,
+.hand2,
+.shoulder1,
+.shoulder2,
+.main-body {
+    float: right;
+}
+
+.hand1 {
+    background-color: bisque;
+    height: 30px;
+    width: 140px;
+    margin-right: 250px;
+}
+
+.shoulder1 {
+    background-color: yellowgreen;
+    height: 50px;
+    width: 70px;
+}
+
+.main-body {
+    background-color: yellowgreen;
+    height: 300px;
+    width: 130px;
+}
+
+.collar {
+    background-color: white;
+    height: 15px;
+    width: 18px;
+    margin: 0 auto;
+}
+
+.shoulder2 {
+    background-color: yellowgreen;
+    height: 50px;
+    width: 70px;
+}
+
+.hand2 {
+    background-color: bisque;
+    height: 30px;
+    width: 140px;
+}
+
+.belt {
+    background-color: #000;
+    height: 15px;
+    width: 130px;
+    clear: both;
+    margin-left: 462px;
+}
+
+.belt-part {
+    background-color: blue;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+}
+
+.legs {
+    margin-right: 461px;
+}
+
+.leg1 {
+    margin-left: 28px;
+}
+
+.leg1,
+.leg2 {
+    background-color: crimson;
+    height: 300px;
+    width: 50px;
+    float: right;
+    position: relative;
+}
+
+.shoe1,
+.shoe2 {
+    background-color: #000;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}

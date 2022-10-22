@@ -1,0 +1,102 @@
+.pr-name,
+.org,
+.desc,
+.team-sec,
+.data {
+    font-family: Bahij SultanNahia, sans-serif;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.pr-name,
+.org {
+    width: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+h4 {
+    color: lightgray;
+}
+
+.desc,
+.team-sec {
+    height: 60px;
+    padding: 20px;
+}
+
+.desc {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.team-sec {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: initial;
+}
+
+.team-sec h2 {
+    margin: 20px 3px;
+}
+
+.team-sec h4 {
+    position: absolute;
+    margin: 55px 70px;
+}
+
+.team-sec img {
+    height: 70px;
+    width: 65px;
+}
+
+.data {
+    max-height: 300px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.data img {
+    height: 70px;
+    width: 65px;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.main-col {
+    padding-top: 20px;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* p {
+    background-color: skyblue;
+    font-family: Bahij SultanNahia, sans-serif;
+}
+
+div {
+    background-color: gray;
+    font-family: ChronicaPro-Regular,sans-serif;
+} */

@@ -1,0 +1,369 @@
+@import "./max-width-768.scss";
+@import "./max-width-300.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+
+.btns {
+    background-color: rgba(255, 78, 80, 1);
+    border-radius: 14px;
+    border: none;
+    color: white;
+}
+
+.icon {
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+$primary-text-color: white;
+
+body {
+    font-family: Montserrat;
+}
+
+@media (min-width: 960px) {
+    .container-md {
+        max-width: 960px !important;
+    }
+}
+
+.head {
+    background-image: url(../images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: $primary-text-color;
+
+    .left {
+        font-size: 20px;
+        font-family: MontserratBold;
+    }
+
+    .right {
+        display: flex;
+        gap: 50px;
+
+        .sign-up {
+            border: 1px white solid;
+            padding: 5px 14px;
+            border-radius: 50px;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-text-color;
+    margin-top: 150px;
+    flex-flow: column wrap;
+
+    .head-text {
+        font-size: 50px;
+        font-family: MontserratBold;
+    }
+
+    .undertext {
+        font-size: 24px;
+        padding: 30px 0;
+    }
+
+    .find {
+        font-size: 14px;
+        padding: 12px 20px;
+        font-family: MontserratBold;
+        border-radius: 50px;
+        @extend .btns;
+    }
+}
+
+.title {
+    color: #000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    font-family: MontserratBold;
+    margin-top: 30px;
+}
+
+.part2 {
+    width: 100%;
+
+    .pics {
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        gap: 30px;
+
+        .pic {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            .contains {
+                position: absolute;
+                display: flex;
+                bottom: 10px;
+                gap: 20px;
+                flex-direction: column;
+                padding: 0 10px;
+                box-sizing: border-box;
+
+                .big-text {
+                    color: $primary-text-color;
+                    font-family: MontserratBold;
+                    font-size: 14px;
+                }
+
+                .small-text {
+                    color: $primary-text-color;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .pic img {
+            width: 100%;
+            position: relative;
+        }
+
+        button {
+            @extend .btns;
+            padding: 4px 18px;
+            width: 69px;
+            font-size: 10px;
+        }
+    }
+}
+
+.part3 {
+    .btn-part3 {
+        button {
+            background-color: white;
+            color: rgba(255, 78, 80, 1);
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 78, 80, 1);
+            font-family: MontserratBold;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+.people {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 35px;
+
+    .bradley,
+    .marie,
+    .diana,
+    .christopher {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 225px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .name {
+            font-size: 14px;
+            font-family: MontserratBold;
+            padding: 15px 0;
+        }
+
+        .description {
+            font-size: 14px;
+            color: rgba(102, 102, 102, 1);
+        }
+
+        .photo {
+            position: relative;
+        }
+
+        img {
+            height: 90px;
+            width: 90px;
+        }
+
+        i {
+            @extend .icon;
+            position: absolute;
+            margin-top: 63px;
+            right: 0;
+        }
+    }
+
+    .bradley {
+        i {
+            background-color: rgba(255, 78, 80, 1);
+        }
+    }
+
+    .marie {
+        i {
+            background-color: #19d4ca;
+        }
+    }
+
+    .diana {
+        i {
+            background-color: #ffa710;
+        }
+    }
+
+    .christopher {
+        i {
+            background-color: #667df3;
+        }
+    }
+}
+
+.part4 {
+    margin-top: 20px;
+
+    .pictures {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 25px;
+
+        .picture {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 3px;
+
+            img {
+                width: 100%;
+            }
+
+            .text {
+                display: flex;
+                position: absolute;
+                font-family: MontserratBold;
+                color: white;
+                font-size: 22px;
+                align-self: center;
+            }
+        }
+    }
+}
+
+.part5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .question {
+        margin-top: 35px;
+        color: rgba(102, 102, 102, 1);
+        font-size: 15px;
+    }
+
+    .answer {
+        input {
+            padding: 5px 130px 5px 7px;
+        }
+
+        .find {
+            @extend .btns;
+            padding: 8px 38px;
+        }
+    }
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 78, 80, 1);
+    margin-top: 70px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 80px;
+
+    .rows {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 210px;
+
+        .row1 {
+            color: rgba(255, 78, 80, 1);
+            font-size: 16px;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                list-style: none;
+                li {
+                    color: rgba(153, 153, 153, 1);
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-family: MontserratBold;
+            margin-bottom: 10px;
+        }
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+
+        .text {
+            display: flex;
+            justify-content: end;
+            font-size: 10px;
+            color: rgba(204, 204, 204, 1);
+        }
+    }
+}
