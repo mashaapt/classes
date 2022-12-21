@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="txar1">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <button type="button" class="editBtn">Edit</button>
+        <button type="button" class="styleBtn">Style</button>
+
+        <div class="txar2" hidden>
+            <div class="editing">
+                <textarea cols="60" rows="10"></textarea>
+            </div>
+
+            <form class="styling" hidden>
+                <div class="sizes">
+                    <p>Font Size:</p>
+                    <input type="radio" name="sizing" value="12px">12px
+                    <input type="radio" name="sizing" value="14px">14px
+                    <input type="radio" name="sizing" value="16px">16px
+                    <input type="radio" name="sizing" value="18px">18px
+                    <input type="radio" name="sizing" value="20px">20px
+                </div>
+                
+                <div class="fontFams">
+                    <p>Font Family:</p>
+                    <select class="fonts" name="fonts">
+                        <option value="cursive">Cursive</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="sans-serif">Sans-serif</option>
+                    </select>
+                </div>
+
+                <p>Colors:</p>
+                <button type="button" class="colorBtn" name="colorBtn">Color of Text</button>
+                <button type="button" class="colorBtn" name="colorBtn">Background color</button>
+
+                <p>Style:</p>
+                <input type="checkbox" name="checks" value="bold">Bold text
+                <input type="checkbox" name="checks" value="cursive">Cursive text
+            </form>
+
+            <div class="addSaveBtns">
+                <button type="button" class="addBtn">Add</button>
+                <button type="button" class="saveBtn">Save</button>
+            </div>
+
+            <div class="colorsForBtns" style="display: none;">
+                <div style="background:red" class="cell"></div>
+                <div style="background:green" class="cell"></div>
+                <div style="background:blue" class="cell"></div>
+                <div style="background:tan" class="cell"></div>
+                <div style="background:skyblue" class="cell"></div>
+                <div style="background:yellow" class="cell"></div>
+                <div style="background:pink" class="cell"></div>
+                <div style="background:purple" class="cell"></div>
+                <div style="background:violet" class="cell"></div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>

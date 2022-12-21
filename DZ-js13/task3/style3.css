@@ -1,0 +1,13 @@
+div {
+    height: 300px;
+    width: 300px;
+    border: solid black 4px;
+    gap: 30px;
+
+}
+
+.boxes {
+    display: flex;
+    width: 100%;
+    border: none;
+}

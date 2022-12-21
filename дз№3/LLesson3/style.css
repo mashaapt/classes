@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 100px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    border-top: 15px solid brown;
+    padding: 1px;
+}
+.eyes{
+    width: 100%;
+    height: 50px;
+    padding: 1px;
+    /* background-color: black; */
+}
+.eye1 {
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 14px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    padding: 1px;
+}
+
+.eye2 {
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 60px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.nose{
+    margin-left: 40px;
+    width: 10px;
+    height: 10px;
+}
+.mouth{
+    margin-left: 42px;
+}
+.neck{
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div21 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    padding: 1px;
+    background-color: beige;
+    /* border: dotted 30px black; */
+    overflow: scroll;
+}
+
+.div22 {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: brown;
+    padding-left: 30px;
+    float: right;
+    transition: 2s;
+    border-radius: 50%;
+}
+
+/* .div22:hover {
+    transform: skew(20deg); 
+} */
+
+
+
+
+
+.divOne {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    padding: 1px;
+}
+
+.divTwo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    padding: 1px;
+}
+
+.div3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    margin-top: 49px;
+    background-color: brown;
+    padding: 1px;
+}
+
+.div4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    background-color: coral;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <div class="creation">
+        <h2 class="create">Create your account</h2>
+        <form>
+            <label for="fname">First name</label>
+            <input type="text" name="fname" class="formInput" placeholder="type here...">
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" class="formInput" placeholder="type here...">
+            <label for="email">Email address</label>
+            <input type="email" class="formInput" name="email" placeholder="enter email">
+
+            <div class="sex">
+                <input type="radio" class="male" value="male" name="sex">
+                <h5>man</h5>
+                <input type="radio" class="female" value="female" name="sex">
+                <h5>woman</h5>
+            </div>
+            <div class="selecting">
+                <label for="position">Position</label>
+                <select name="position" id="position">
+                    <!-- <option value="choose">Choose</option> -->
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="QC/QA">QC/QA</option>
+                </select>
+            </div>
+            <div class="agree">
+                <input name="agree" type="checkbox">
+                <h3>I agree to all statements in Terms of service</h3>
+            </div>
+        </form>
+        <button class="signup" disabled>Sign Up</button>
+
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn1 {
+    background-color: var(--bs-pink);
+}
+
+.container1 {
+    width: 373px;
+    height: 275px;
+    /* background-color: aqua; */
+    /* display: flex; */
+}
+.contentPhoto{
+    width: 373px;
+        height: 275px;
+    z-index: 100000;
+}
+.photo {
+    width: 373px;
+    height: 275px;
+    background-image: url('./img/bg.png');
+    background-size: 373px 275px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: -1101010;
+}

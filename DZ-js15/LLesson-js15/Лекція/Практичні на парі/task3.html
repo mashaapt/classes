@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Task3</title>
+</head>
+
+<body>
+    <form action="#" name='myForm'>
+        <input type="text" name='login'>
+        <input type="password" name='pass1'>
+        <input type="password" name='pass2'>
+        <label>
+            <input type="radio" name="check" id='man' value='Man'> Man </label>
+        <label>
+            <input type="radio" name="check" id='woman' value='Woman'> Woman </label>
+        <input type="button" value="Check" name='btn'>
+    </form>
+    <script>
+        let df = document.forms;
+        df.myForm.btn.addEventListener('click', function () {
+            let valLogin = df.myForm.login.value;
+            let valPassword1 = df.myForm.pass1.value;
+            let valPassword2 = df.myForm.pass2.value;
+            if (valLogin == '' || valLogin == valLogin * 1) {
+                console.log('wrong login!');
+            }
+            if (valPassword1 == '' && valPassword2 == '' || valPassword1 !== valPassword2) {
+                console.log('wrong password!')
+            }
+            if (man.checked) {
+                console.log('You are MAN!!!');
+            } else if (woman.checked) {
+                console.log('You are WOMAN!!!');
+            }
+        })
+    </script>
+</body>
+
+</html>

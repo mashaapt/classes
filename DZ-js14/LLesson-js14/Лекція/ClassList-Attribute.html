@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClassList-Attribute</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 20px;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <button class="add">add</button>
+        <button class="remove">remove</button>
+        <button class="toggle">toggle</button>
+    </div>
+    <div class="box"></div>
+    <button id="checkArrow">checkArrow</button>
+
+    <script>
+/* 
+    При читанні HTML браузер генерує DOM-модель. При цьому більшість стандартних HTML-атрибутів стають властивостями відповідних об'єктів.
+    Наприклад, якщо тег виглядає як <body id = "page">, то у об'єкта буде властивість body.id = "page".
+
+    Але це перетворення - не один-в-один. Бувають ситуації, коли атрибут має одне значення, а властивість - інше. 
+    Буває і так, що атрибут є, а властивості з такою назвою не створюється.
+
+    Якщо коротко - HTML-атрибути і DOM-властивості зазвичай, але не завжди відповідають один одному, потрібно розуміти, 
+    що така властивість і що таке атрибут, щоб працювати з ними правильно.
+*/
+
+/* 
+    Доступ до атрибутів здійснюється за допомогою стандартних методів:
+        elem.hasAttribute (name) - перевіряє наявність атрибута
+        elem.getAttribute (name) - отримує значення атрибута
+        elem.setAttribute (name, value) - встановлює атрибут
+        elem.removeAttribute (name) - видаляє атрибут
+        Ці методи працюють зі значенням, яке знаходиться в HTML.
+*/
+
+/* let getSel = selector => document.querySelector(selector) */
+/* 
+    // Приклад задання атрибуту 
+    getSel('.add').onclick = function(){
+        getSel('.box').hasAttribute('id')
+    }
+*/
+/* 
+    // Приклад перевірки атрибуту 
+    getSel('.add').onclick = function(){
+        getSel('.box').hasAttribute('id')
+    }
+*/
+/* 
+    // Приклад перевірки атрибуту 
+    getSel('.add').onclick = function(){
+        let cl = getSel('.box').getAttribute('class');
+        console.log(cl)
+    }
+*/
+/* 
+    // Приклад видалення атрибуту 
+    getSel('.add').onclick = function(){
+        getSel('.box').removeAttribute('class');
+    }
+*/
+
+/* 
+    Атрибут class - унікальний. Йому відповідає аж цілих дві властивості!
+    className i classList.
+    Властивість classList - це об'єкт для роботи з класами.
+    Методи classList:
+        elem.classList.contains ("class") - повертає true / false, залежно від того, чи є у елемента клас class.
+        elem.classList.add / remove ("class") - додає / видаляє клас class
+        elem.classList.toggle ("class") - якщо класу class немає, додає його, якщо є - видаляє.
+    Властивість className відповідає атрибуту "class"
+    Так як слово "class" є зарезервованим словом в Javascript, то при проектуванні DOM вирішили, що відповідне властивість буде називатися className.
+*/
+/* 
+    // Приклад додавання класів
+    getSel('.add').onclick = function(){
+        getSel('.box').classList.add('red', 'big-box');
+    }
+*/
+/* 
+    // Приклад видалення класу
+    getSel('.remove').onclick = function(){
+        getSel('.box').classList.remove('big-box');
+    }
+*/    
+/* 
+    // Приклад toggle класу
+    getSel('.toggle').onclick = function(){
+        getSel('.box').classList.toggle('red');
+    }
+*/
+/* 
+    // Приклад реалізації toggle класу через умову
+        let check = true;
+        getSel('.toggle').onclick = function () {
+            if (check) {
+                getSel('.box').classList.add('red');
+                check = false;
+            }
+            else {
+                getSel('.box').classList.remove('red');
+                check = true;
+            }
+        }
+*/        
+/* 
+    // Приклад перевірки класу, а також приклад додавання і поврнення класів через className
+    getSel('.toggle').onclick = function(){
+        let check = getSel('.box').classList.contains('red') // перевірка чи є даний клас в елемента
+        console.log(check);
+        let cl = getSel('.box').className; // повертаємо класи які є в елемента 
+        console.log(cl);
+        // getSel('.box').className += ' red'; // можемо так додати клас, але краще через classList
+        // getSel('.box').id = 'newId'; // так можемо задати id елементу
+    }  
+*/
+
+/*  
+    getComputedStyle
+    Отже, властивість style дає доступ тільки до тієї інформації, яка зберігається в elem.style.
+    Для того, щоб отримати поточні значення властивості, використовується метод window.getComputedStyle.
+    Синтаксис: getComputedStyle (element [, pseudo])
+        element - Елемент, значення для якого потрібно отримати
+        pseudo - Вказується, якщо потрібен стиль псевдо-елемента, наприклад ":: before". Порожній рядок або відсутність аргументу означають сам елемент.
+*/
+/* 
+    // Приклад повернення значень через getComputedStyle
+    getSel('.add').onclick = function(){
+        let box = getSel('.box')
+        let computedStyle = getComputedStyle(box);
+        console.log(computedStyle.width);// виведе ширину елемента
+        console.log(computedStyle.border);// виведе всі значення бордера
+        
+    }
+*/
+    </script>
+</body>
+
+</html>

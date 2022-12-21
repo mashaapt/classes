@@ -1,0 +1,58 @@
+.profile {
+    text-align: center;
+    border: darkgray solid 2px;
+    width: 46%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.photo {
+    background-color: limegreen;
+    margin: 0;
+    padding: 50px;
+    position: relative;
+}
+
+img {
+    width: 100px;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: white solid 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.infos {
+    margin-top: 100px;
+}
+
+.email,
+.position {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.signout {
+    margin: 25px 0;
+    padding: 10px;
+    background-color: white;
+    color: limegreen;
+    border: limegreen solid 1.5px;
+    border-radius: 5px;
+}
+
+.icon {
+    font-weight: 400;
+    margin-right: 15px;
+    font-size: 26px;
+}
+
+.foot {
+    background-color: limegreen;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}

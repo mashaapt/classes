@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="" name="f1">
+        <input type="text" name="tt">
+        <input type="password" name="tp">
+        <input type="button" name="tb" value="button">
+    </form>
+    <hr>
+    <form action="" name="f2">
+        <input type="radio" name="tr" value="red">red
+        <input type="radio" name="tr" value="green">green
+        <input type="radio" name="tr" value="blue">blue
+        <input type="radio" name="tr" value="yellow">yellow
+        <input type="radio" name="tr" value="white">white
+        <p>lorem</p>
+    </form>
+    <hr>
+    <form action="" name="f3">
+        <input type="checkbox" name="ch">
+        <div class="form-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet ad nulla
+            corporis, nobis, illum soluta id beatae assumenda expedita qui voluptas est ea autem velit, cumque ullam
+            doloremque dignissimos!</div>
+    </form>
+    <hr>
+    <form action="" name="f4">
+        <select name="colors">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+            <option value="white">white</option>
+        </select>
+    </form>
+    <form action="" name="f5">
+        <input type="text" name="change"> oninput: <span id="result"></span>
+    </form>
+    <script>
+
+/* Елементи FORM можна отримати по імені або номеру, використовуючи властивість document.forms [name / index]. */
+
+    let f1 = document.forms['f1'];//звернення по імені
+    //let f1 = document.forms.f1;//звернення по імені
+    //let f1 = document.forms[0];//звернення по номеру
+    console.log(f1); 
+
+/* властивості форм: */
+        console.log(f1.length); // показує кількість елементів в середині форми
+        console.log(f1.name); // показує ім'я форми
+        // f1.name = 'f2'; // змінює імя форми
+/* 
+    Будь-який елемент форми form можна отримати аналогічним чином, використовуючи властивість form.elements. 
+    Може бути кілька елементів з однаковим ім'ям. В такому випадку form.elements [name] поверне колекцію елементів.
+*/
+    console.log(f1.tb); // поверне доступ по елемента з іменем tb
+/* 
+    Властивості елементів:
+        .name // ім'я елемента
+        .value // значення елемента
+        .defaultValue // значення за замовчуванням
+        .checked // true/false(checkbox,radio)
+        .selected // вибраний елемент в випадаючому меню(select)
+*/
+/* Приклад з інпут елементами */
+        f1.tb.onclick = function () {
+            let login = f1.tt.value; // зчитуємо введене значення 
+            let password = f1.tp.value;
+            console.log(login, password);
+            f1.tt.value = ''; // зачистка поля
+            f1.tp.value = '';
+            f1.reset(); // очищуємо всі поля форми
+            f1.tt.placeholder = login; // значення можна присвоїти в placeholder
+            f1.tt.disabled = true; // робимо поле не активне1
+        } 
+/* Приклад з радіобаттонами */
+        let f2 = document.forms['f2'];
+        // console.log(f2.elements); // повертає масив тільки елементів форми
+        // console.log(f2.children); // повертає масив дітей форми
+        // console.log(f2.tr); // повертає масив елементів з іменем tr
+        for (let i = 0; i < f2.length; i++) {
+            f2.elements[i].addEventListener('click', function () {
+                document.body.style.background = this.value
+            })
+        }
+/* Приклад з чекбоксом */
+        let f3 = document.forms['f3'];
+        f3.ch.addEventListener('click', function () {
+            if (this.checked) {
+                document.querySelector('.form-box').style.display = 'none'
+            }
+            else {
+                document.querySelector('.form-box').style.display = 'block'
+            }
+        })
+/* 
+    У елементів option також є особливі властивості, які можуть виявитися корисними (див. The option element):
+        selected - обрана опція
+        index - номер опції в списку селекта
+        text - текстовий вміст опції (то, що бачить відвідувач).
+*/
+/* Приклад з селектом */
+        let f4 = document.forms['f4'];
+        f4.colors.onchange = function () {
+            for (let i = 0; i < f4.colors.options.length; i++) {
+                if (f4.colors.options[i].selected) {
+                    document.body.style.background = this.value;
+                }
+            }
+        }
+// Подія input спрацьовує тут же при зміні значення текстового елемента і підтримується всіма браузерами, крім IE8-.
+/* Приклад з подією input */
+        let f5 = document.forms['f5'];  
+        f5.change.oninput = function() {
+            document.getElementById('result').innerHTML = input.value;
+        };
+    </script>
+</body>
+</html>

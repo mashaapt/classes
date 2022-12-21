@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <script>
+        //Напишіть функцію getDecimal (num), яка повертає десяткову частину числа:
+        function decimal(num) {
+            let index = (num + '').indexOf('.') + 1;
+            let findLength = (num + '').slice(index).length;
+            num = (num - Math.floor(num)).toFixed(findLength);
+            console.log(num)
+        }
+        decimal(1.123456)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*  
+            Деструктуризація об'єктів
+
+            Деструктуризація (destructuring) можливо вивести з об'єкта окремі значення в перекладі:
+
+            let user = {
+                name: "Ivan",
+                age: 25,
+                phone: "+380980008888",
+                email: "ivan@gmail.com"
+            };
+
+            let {name, email} = user;
+            console.log(name);      // Ivan
+            console.log(email);     // ivan@gmail.com
+
+            Для деструктуризації об'єкта змінні розміщуються у фігурних дужках і їм присвоюється об'єкт. 
+            Зіставлення між властивостями об'єкта і змінними йде по імені.
+
+            Ми можемо вказати, що ми хочемо отримати значення властивостей об'єкта в змінні з іншим ім'ям:
+
+            let user = {
+                name: "Ivan",
+                age: 25,
+                phone: "+380980008888",
+                email: "ivan@gmail.com"
+            };
+
+            let {name: userName, email: userEmail} = user;
+            console.log(userName);      // Ivan
+            console.log(userEmail);     // ivan@gmail.com
+
+            В даному випадку властивість name зіставляється зі змінною userName, а поле email - зі змінною userEmail.
+            -----------------------------------------------------------------------------------------------------------------------------
+
+            Деструктуризація масивів
+
+            Також можна деструктуризувати масиви:
+
+            let users = ["Ivan", "Petro", "Pavlo"];
+            let [a, b, c] = users;
+            
+            console.log(a);     // Ivan
+            console.log(b);     // Petro
+            console.log(c);     // Pavlo
+
+            Для деструктуризації масиву змінні поміщаються в квадратні дужки і послідовно отримують значення елементів масиву.
+
+            При цьому ми можемо пропустити ряд елементів масиву, залишивши замість імен змінних пропуски:
+
+            let users = ["Ivan", "Petro", "Pavlo", "Iryna", "Alina", "Oksana"];
+            let [first,,,,fifth] = users;
+            
+            console.log(first);     // Ivan
+            console.log(fifth);     // Alina
+
+            Вираз first,,,, fifth вказує, що ми хочемо отримати перший елемент масиву в змінну first, 
+            потім пропустити три елементи і отримати п'ятий елемент в змінну fifth.
+
+            Подібним чином можна отримати, наприклад, другий і четвертий елементи:
+
+            let users = ["Ivan", "Petro", "Pavlo", "Iryna", "Alina", "Oksana"];
+            let [,second,,forth] = users;
+            
+            console.log(second);        // Petro
+            console.log(forth);         // Iryna
+
+            Можна поєднати отримання даних з масиву і об'єкта:
+
+            let people = [
+                {name: "Ivan", age: 25},
+                {name: "Petro", age: 18},
+                {name: "Pavlo", age: 33}
+            ];
+            let [,{name}] = people;
+            
+            console.log(name);      // Petro
+
+            В даному випадку отримуємо значення властивості name другого об'єкта в масиві.
+            -----------------------------------------------------------------------------------------------------------------------------
+
+            Деструктуризація параметрів
+            Якщо в функцію як параметр передається масив або об'єкт, то його також можна подібним чином деструктуризувати:
+
+            function display({name:userName, age:userAge}){
+                console.log(userName, userAge);
+            }
+            function sum([a, b, c]){
+                var result = a + b + c;
+                console.log(result);
+            }
+            let user = {name:"Alina", age:20, email: "alina@gmail.com"};
+            
+            
+            let numbers = [10, 20, 30, 40];
+            
+            display(user);  // Alina 20
+            sum(numbers);   // 60
+
+            function post(url, {data: {name, sname}, cache}){
+                console.log(name, sname, cache);
+            }
+
+            let result = post('api/users', {data: person, cache: false});
+        */
+
+
+    </script>
+    
+</body>
+</html>

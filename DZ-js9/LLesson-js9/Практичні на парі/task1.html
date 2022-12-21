@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <script>
+        // Напишіть функцію randomNumber (min, max) для генерації випадкового цілого числа між min і max, включаючи min, max як можливі значення.
+        let n1 = +prompt('write first number');
+        let n2 = +prompt('write second number');
+        function randomizer(min, max) {
+            let rand = min + Math.random() * (max - min);
+            rand = Math.round(rand);
+            return rand
+        }
+        console.log(randomizer(10, 20))
+         // let randomizer = (min,max) => Math.round(min + Math.random()*(max-min)) 
+    </script>
+</body>
+
+</html>

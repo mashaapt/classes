@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    width: 100%;
+    height: 90900px;
+}
+
+input {
+    width: 300px;
+    height: 90px;
+}
+
+.some.someDiv {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    height: 100px;
+    background-color: rgb(20, 206, 14);
+}
+
+.some {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    height: 100px;
+    background-color: brown;
+}
+
+div+p {
+    color: red;
+}
+
+p[title="title"] {
+    color: rgb(73, 0, 207);
+}
+
+textarea {
+    resize: none;
+}
+
+.mainDiv {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    height: 300px;
+    background-color: rgb(231, 177, 177);
+}
+
+/* .mainDiv::before{
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin-left: -100px;
+}
+.mainDiv::after {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 21);
+} */
+.mainDiv::first-letter {
+    font-size: 3rem;
+}
+
+.mainDiv::first-line {
+    text-decoration: underline;
+}
+
+.mainDiv::selection {
+    color: red;
+    background-color: bisque;
+}
+
+input::placeholder {
+    color: red;
+}
+
+a {
+    color: brown;
+}
+
+a:hover {
+    color: chartreuse
+}
+
+a:visited {
+    color: rgb(255, 123, 0)
+}
+.textInput:focus{
+    background-color: blueviolet;
+}
+li:first-child{
+    background-color: aqua;
+}
+li:last-child{
+    background-color: blueviolet;
+}
+li:nth-child(2){
+    background-color: coral;
+}
+li:nth-child(7) {
+    background-color: chartreuse;
+}
+/* li:nth-child(odd){
+    background-color: coral;
+}
+li:nth-child(even){
+    background-color: rgb(6, 187, 21);
+} */
+li:nth-child(2n){
+    background-color: blue;
+}
+.main{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}

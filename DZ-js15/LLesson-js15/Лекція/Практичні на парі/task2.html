@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Task2</title>
+</head>
+<body>
+	<form name='f1'>
+		<input type='text' name='tf'>
+		<input type='button' name='show' value='show'>
+	</form>
+	<script>
+		let df = document.forms.f1;
+		df.show.onclick = function () {
+			if (df.tf.value == '') console.log('Input smth');
+			else console.log(df.tf.value);
+		}
+	</script>
+</body>
+</html>

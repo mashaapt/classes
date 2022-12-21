@@ -1,0 +1,30 @@
+body {
+    margin: 0 20%;
+}
+
+#moved1,
+#moved2 {
+    padding: 6px 0;
+    width: 252px;
+    border-radius: 5px;
+    color: darkgray;
+    border: lightgray solid 2px;
+}
+
+.move {
+    padding: 8px 75px;
+    margin: 0 20px;
+    background-color: limegreen;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.placeholder {
+    padding: 6px 0;
+    width: 740px;
+    border: lightgray solid 2px;
+    border-radius: 5px;
+    /* color: darkgray; */
+}
